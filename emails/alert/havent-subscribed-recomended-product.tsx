@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Text, Section, Row, Column, Button } from "@react-email/components";
 
-import Layout from "../static/components/Layouts";
-import ContactReksadana from "../static/components/Contacts/ContactReksadana";
-import Header from "../static/components/Headers";
-import FooterReksadana from "../static/components/Footers/Reksadana";
+import Layout from "../static/components/Layout";
+import ContactReksadana from "../static/components/Contact/ContactReksadana";
+import Header from "../static/components/Header";
+import FooterReksadana from "../static/components/Footer/Reksadana";
 
 const ZeroPorto = () => {
   return (

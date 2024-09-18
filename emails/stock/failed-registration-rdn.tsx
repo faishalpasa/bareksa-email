@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Text, Section, Row, Column, Button } from "@react-email/components";
 
-import Layout from "../static/components/Layouts";
-import ContactStock from "../static/components/Contacts/ContactStock";
-import Header from "../static/components/Headers";
-import FooterStock from "../static/components/Footers/Stock";
+import Layout from "../static/components/Layout";
+import ContactStock from "../static/components/Contact/ContactStock";
+import Header from "../static/components/Header";
+import FooterStock from "../static/components/Footer/Stock";
 
 const FailedRegistrationRDN = () => {
   return (
