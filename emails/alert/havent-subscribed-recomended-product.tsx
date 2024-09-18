@@ -6,7 +6,7 @@ import Contact from "../static/components/contact";
 import Header from "../static/components/header";
 import FooterReksadana from "../static/components/footer/reksadana";
 
-const NewUser = () => {
+const ZeroPorto = () => {
   return (
     <Layout>
       <Header title="Rekomendasi Reksa Dana" bgColor="#F7F9FA" />
@@ -22,7 +22,68 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Ayo mulai investasi pertamamu di Bareksa! Tim Analis Bareksa telah mengkurasi produk-produk reksa dana pilihan untuk mengoptimalkan keuntungan investasimu.
+              Sudah siap mengecek analisa investasi dan potensi keuntunganmu? Inilah kinerja portofoliomu per <span className="font-bold">[xx month yyyy]</span>.
+            </Text>
+          </Column>
+        </Row>
+        <Row className="mb-4">
+          <Column>
+            <table className="w-full border-none">
+              <thead>
+                <tr>
+                  <td className="text-[#3D4751] font-arial font-bold text-sm p-3 w-1/3">
+                    Tipe Reksa Dana
+                  </td>
+                  <td className="text-[#3D4751] font-arial font-bold text-sm p-3 w-1/3">
+                    Nama Reksa Dana
+                  </td>
+                  <td className="text-[#3D4751] font-arial font-bold text-sm p-3 w-1/3">
+                    Imbal Hasil
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-[#F7F9FA]">
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Tipe Reksa Dana]
+                  </td>
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Nama Reksa Dana]
+                  </td>
+                  <td className="text-[#17A349] font-arial font-normal text-sm p-3">
+                    +99,99%
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Tipe Reksa Dana]
+                  </td>
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Nama Reksa Dana]
+                  </td>
+                  <td className="text-[#E63312] font-arial font-normal text-sm p-3">
+                    -99,99%
+                  </td>
+                </tr>
+                <tr className="bg-[#F7F9FA]">
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Tipe Reksa Dana]
+                  </td>
+                  <td className="text-[#3D4751] font-arial font-normal text-sm p-3">
+                    [Nama Reksa Dana]
+                  </td>
+                  <td className="text-[#5C6E7D] font-arial font-normal text-sm p-3">
+                    0,00%
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </Column>
+        </Row>
+        <Row className="mb-4">
+          <Column>
+            <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
+              Ayo optimalkan keuntungan investasimu dan selesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
             </Text>
           </Column>
         </Row>
@@ -90,7 +151,7 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Jadi, tunggu apa lagi? Awali langkahmu menuju kebebasan finansial dengan menyelesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
+              Ayo optimalkan keuntungan investasimu dan selesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
             </Text>
           </Column>
         </Row>
@@ -123,4 +184,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default ZeroPorto;

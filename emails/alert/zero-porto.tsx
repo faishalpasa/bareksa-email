@@ -6,7 +6,7 @@ import Contact from "../static/components/contact";
 import Header from "../static/components/header";
 import FooterReksadana from "../static/components/footer/reksadana";
 
-const NewUser = () => {
+const ZeroPorto = () => {
   return (
     <Layout>
       <Header title="Rekomendasi Reksa Dana" bgColor="#F7F9FA" />
@@ -22,7 +22,7 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Ayo mulai investasi pertamamu di Bareksa! Tim Analis Bareksa telah mengkurasi produk-produk reksa dana pilihan untuk mengoptimalkan keuntungan investasimu.
+              Ini saatnya kamu kembali berinvestasi reksa dana yang dapat memberikan potensi keuntungan maksimal. Tim Analis Bareksa telah mengkurasi produk-produk reksa dana pilihan untukmu.
             </Text>
           </Column>
         </Row>
@@ -90,7 +90,7 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Jadi, tunggu apa lagi? Awali langkahmu menuju kebebasan finansial dengan menyelesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
+              Ayo mulai kembali investasi reksa dana kamu dan selesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
             </Text>
           </Column>
         </Row>
@@ -123,4 +123,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default ZeroPorto;
