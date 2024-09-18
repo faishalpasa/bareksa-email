@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text, Section, Row, Column, Img } from "@react-email/components";
 
-const FooterReksadana = () => {
+const FooterStock = () => {
   return (
     <Section className="p-6 bg-[#E6F6EA]">
       <Row className="mb-4">
@@ -66,4 +66,4 @@ const FooterReksadana = () => {
   );
 };
 
-export default FooterReksadana;
+export default FooterStock;

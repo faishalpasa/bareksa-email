@@ -1,10 +1,10 @@
 import * as React from "react";
-import { Text, Section, Row, Column, Button, Container } from "@react-email/components";
+import { Text, Section, Row, Column } from "@react-email/components";
 
-import Layout from "../static/components/layout";
-import Contact from "../static/components/contact";
-import Header from "../static/components/header";
-import FooterStock from "../static/components/footer/stock";
+import Layout from "../static/components/Layout";
+import ContactStock from "../static/components/Contact/ContactStock";
+import Header from "../static/components/Header";
+import FooterStock from "../static/components/Footer/Stock";
 
 const FailedRegistrationRDN = () => {
   return (
@@ -68,7 +68,7 @@ const FailedRegistrationRDN = () => {
         </Row>
       </Section>
 
-      <Contact />
+      <ContactStock />
       <FooterStock />
     </Layout>
   );

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text, Section, Row, Column, Img } from "@react-email/components";
 
-const NewUser = () => {
+const ContactStock = () => {
   return (
     <Section className="p-6">
       <Row>
@@ -20,9 +20,9 @@ const NewUser = () => {
             <Img src="https://images.bareksa.com/icons/email-stock-phone.png" className="w-5 h-5" />
             <Text className="text-sm font-arial m-0 font-normal text-[#000000]">(021) 80676767</Text>
           </a>
-          <a href="mailto:cs@bareksa.com" className="bg-[#EFF1F3] flex items-center gap-2 px-4 py-2 no-underline rounded">
+          <a href="mailto:cs.saham@bareksa.com" className="bg-[#EFF1F3] flex items-center gap-2 px-4 py-2 no-underline rounded">
             <Img src="https://images.bareksa.com/icons/email-stock-envelope.png" className="w-5 h-5" />
-            <Text className="text-sm font-arial m-0 font-normal text-[#000000]">cs@bareksa.com</Text>
+            <Text className="text-sm font-arial m-0 font-normal text-[#000000]">cs.saham@bareksa.com</Text>
           </a>
         </Column>
       </Row>
@@ -30,4 +30,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default ContactStock;
