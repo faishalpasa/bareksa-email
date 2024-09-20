@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Text, Section, Row, Column } from "@react-email/components";
+import * as React from 'react';
+import { Text, Section, Row, Column } from '@react-email/components';
 
-import Layout from "../static/components/Layout";
-import ContactStock from "../static/components/Contact/ContactStock";
-import Header from "../static/components/Header";
-import FooterStock from "../static/components/Footer/Stock";
+import Layout from '../static/components/Layout';
+import ContactStock from '../static/components/Contact/ContactStock';
+import Header from '../static/components/Header';
+import FooterStock from '../static/components/Footer/Stock';
 
 const FailedRegistrationRDN = () => {
   return (
@@ -22,7 +22,9 @@ const FailedRegistrationRDN = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Kami masih menunggu salinan fisik (hard copy) dokumenmu untuk melanjutkan pendaftaran Bareksa Saham. Mohon perhatikan deadline dan detail pengiriman dokumen berikut:
+              Kami masih menunggu salinan fisik (hard copy) dokumenmu untuk
+              melanjutkan pendaftaran Bareksa Saham. Mohon perhatikan deadline
+              dan detail pengiriman dokumen berikut:
             </Text>
           </Column>
         </Row>
@@ -40,7 +42,8 @@ const FailedRegistrationRDN = () => {
                 Dokumen dan Panduan Pengiriman
               </Text>
               <Text className="text-sm font-arial m-0 mb-3 font-bold text-[#2B323A]">
-                Temukan email dengan subject “Bareksa Saham: Pembukaan RDN BCA (Untuk Dicetak & Ditandatangani)”
+                Temukan email dengan subject “Bareksa Saham: Pembukaan RDN BCA
+                (Untuk Dicetak & Ditandatangani)”
               </Text>
             </div>
           </Column>
@@ -48,14 +51,18 @@ const FailedRegistrationRDN = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Apabila dokumen belum diterima pihak Bareksa hingga tanggal di atas, pendaftaran tidak dapat diproses lebih lanjut dan akan berstatus “Gagal”. Kamu perlu mengulang proses pengisian data dari awal saat status pendaftaran telah berubah.
+              Apabila dokumen belum diterima pihak Bareksa hingga tanggal di
+              atas, pendaftaran tidak dapat diproses lebih lanjut dan akan
+              berstatus “Gagal”. Kamu perlu mengulang proses pengisian data dari
+              awal saat status pendaftaran telah berubah.
             </Text>
           </Column>
         </Row>
         <Row className="mb-4">
           <Column>
             <Text className="text-sm font-arial m-0 font-normal text-[#3D4751]">
-              Bila membutuhkan bantuan lebih lanjut, silakan hubungi CS melalui Pusat Bantuan.
+              Bila membutuhkan bantuan lebih lanjut, silakan hubungi CS melalui
+              Pusat Bantuan.
             </Text>
           </Column>
         </Row>

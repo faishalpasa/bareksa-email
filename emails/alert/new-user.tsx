@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Text, Section, Row, Column, Button } from "@react-email/components";
+import * as React from 'react';
+import { Text, Section, Row, Column, Button } from '@react-email/components';
 
-import Layout from "../static/components/Layout";
-import ContactReksadana from "../static/components/Contact/ContactReksadana";
-import Header from "../static/components/Header";
-import FooterReksadana from "../static/components/Footer/Reksadana";
+import Layout from '../static/components/Layout';
+import ContactReksadana from '../static/components/Contact/ContactReksadana';
+import Header from '../static/components/Header';
+import FooterReksadana from '../static/components/Footer/Reksadana';
 
 const NewUser = () => {
   return (
@@ -22,7 +22,9 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Ayo mulai investasi pertamamu di Bareksa! Tim Analis Bareksa telah mengkurasi produk-produk reksa dana pilihan untuk mengoptimalkan keuntungan investasimu.
+              Ayo mulai investasi pertamamu di Bareksa! Tim Analis Bareksa telah
+              mengkurasi produk-produk reksa dana pilihan untuk mengoptimalkan
+              keuntungan investasimu.
             </Text>
           </Column>
         </Row>
@@ -83,20 +85,26 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-sm font-arial m-0 font-normal text-[#697C8E]">
-              <span className="text-red-500">*</span><i>Berdasarkan kinerja di masa lalu</i>
+              <span className="text-red-500">*</span>
+              <i>Berdasarkan kinerja di masa lalu</i>
             </Text>
           </Column>
         </Row>
         <Row className="mb-4">
           <Column>
             <Text className="text-base font-arial m-0 font-normal text-[#3D4751]">
-              Jadi, tunggu apa lagi? Awali langkahmu menuju kebebasan finansial dengan menyelesaikan transaksi sebelum pukul 13.00 WIB untuk mendapatkan harga/unit hari ini.
+              Jadi, tunggu apa lagi? Awali langkahmu menuju kebebasan finansial
+              dengan menyelesaikan transaksi sebelum pukul 13.00 WIB untuk
+              mendapatkan harga/unit hari ini.
             </Text>
           </Column>
         </Row>
         <Row className="mb-4">
           <Column className="text-center">
-            <Button className="bg-[#22B252] text-white text-base font-bold font-nunito py-3 px-20 rounded-full w-fit" href={`{{.open_app}}`}>
+            <Button
+              className="bg-[#22B252] text-white text-base font-bold font-nunito py-3 px-20 rounded-full w-fit"
+              href={`{{.open_app}}`}
+            >
               Buka Aplikasi Bareksa
             </Button>
           </Column>
@@ -104,7 +112,8 @@ const NewUser = () => {
         <Row className="mb-4">
           <Column>
             <Text className="text-sm font-arial m-0 font-normal text-[#3D4751]">
-              Bila membutuhkan bantuan lebih lanjut, silakan hubungi CS melalui Pusat Bantuan.
+              Bila membutuhkan bantuan lebih lanjut, silakan hubungi CS melalui
+              Pusat Bantuan.
             </Text>
           </Column>
         </Row>
