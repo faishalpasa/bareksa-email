@@ -117,6 +117,7 @@
     ],
     "react/react-in-jsx-scope": "off",
     "react/no-children-prop": "off",
+    "react/no-unknown-property": "off",
     "react/prop-types": "off",
     "sonarjs/cognitive-complexity": ["warn", 50],
     "sonarjs/no-duplicate-string": ["warn", { "threshold": 5 }]
