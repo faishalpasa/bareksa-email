@@ -202,8 +202,8 @@ const ZeroPortofolio = () => {
                                           }}
                                         >
                                           Bila membutuhkan bantuan lebih lanjut,
-                                          silakan hubungi CS melalui Pusat
-                                          Bantuan.
+                                          silakan hubungi CS Bareksa melalui
+                                          Pusat Bantuan.
                                         </p>
                                         <p
                                           style={{
