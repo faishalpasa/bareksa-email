@@ -113,7 +113,7 @@ const ZeroPortofolio = () => {
                                         style={{
                                           color: '#3D4751',
                                           fontFamily: 'Arial',
-                                          fontSize: 16,
+                                          fontSize: 14,
                                           fontStyle: 'normal',
                                           fontWeight: 400,
                                           lineHeight: '24px'
@@ -131,7 +131,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751'
@@ -147,7 +147,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -159,7 +159,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -171,7 +171,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -184,7 +184,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontWeight: 400,
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             lineHeight: '24px',
                                             color: '#3D4751',
                                             marginBottom: 16
@@ -202,7 +202,8 @@ const ZeroPortofolio = () => {
                                             fontFamily:
                                               '"Nunito Sans", sans-serif',
                                             color: '#0188D0',
-                                            fontWeight: 700
+                                            fontWeight: 700,
+                                            fontSize: 14
                                           }}
                                         >
                                           Lihat Panduan Pengisian SPT
@@ -220,15 +221,16 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontWeight: 400,
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             lineHeight: '24px',
                                             color: '#3D4751',
                                             marginBottom: 16
                                           }}
                                         >
-                                          Bila membutuhkan bantuan lebih lanjut,
-                                          silakan hubungi CS melalui Pusat
-                                          Bantuan.
+                                          Jika kamu memiliki pertanyaan atau
+                                          membutuhkan bantuan, silakan
+                                          menghubungi CS Bareksa melalui Pusat
+                                          Bantuan atau Live Chat di aplikasi.
                                         </p>
                                         <p
                                           style={{

@@ -113,7 +113,7 @@ const ZeroPortofolio = () => {
                                         style={{
                                           color: '#3D4751',
                                           fontFamily: 'Arial',
-                                          fontSize: 16,
+                                          fontSize: 14,
                                           fontStyle: 'normal',
                                           fontWeight: 400,
                                           lineHeight: '24px'
@@ -131,7 +131,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751'
@@ -146,7 +146,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontWeight: 400,
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             lineHeight: '24px',
                                             color: '#3D4751',
                                             marginBottom: 16
@@ -159,7 +159,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -171,7 +171,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -183,7 +183,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontFamily: 'Arial',
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             fontWeight: 400,
                                             lineHeight: '24px',
                                             color: '#3D4751',
@@ -195,7 +195,7 @@ const ZeroPortofolio = () => {
                                         <p
                                           style={{
                                             fontWeight: 400,
-                                            fontSize: 16,
+                                            fontSize: 14,
                                             lineHeight: '24px',
                                             color: '#3D4751',
                                             marginBottom: 16
