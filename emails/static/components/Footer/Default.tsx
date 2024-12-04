@@ -1,5 +1,5 @@
 import { Section, Row, Text, Column, Img, Link } from '@react-email/components';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const FOOTER_BUTTONS = [
   {
@@ -42,6 +42,19 @@ const FOOTER_SOCIAL_MEDIAS = [
   }
 ];
 
+const FOOTER_DOWNLOAD_APPS = [
+  {
+    label: 'Google Play',
+    url: 'https://bareksa.onelink.me/bLEI/bareksahomefooter?utm_source=bareksa-landing-page&amp;utm_medium=organic&amp;utm_campaign=&amp;utm_content=register-apps',
+    icon: 'https://images.bareksa.com/bareksa/img/logo/badge_google-play.png'
+  },
+  {
+    label: 'App Store',
+    url: 'https://bareksa.onelink.me/bLEI/bareksahomefooter?utm_source=bareksa-landing-page&amp;utm_medium=organic&amp;utm_campaign=&amp;utm_content=register-apps',
+    icon: 'https://images.bareksa.com/bareksa/img/logo/badge_app-store.png'
+  }
+];
+
 const DefaultFooter = () => {
   return (
     <>
@@ -51,16 +64,18 @@ const DefaultFooter = () => {
         </Text>
 
         <Row>
-          <Column className="px-6 pb-6 bg-white">
+          <Column className="px-6 pb-6 bg-white flex items-center">
             {FOOTER_BUTTONS.map((button, index) => (
-              <Link
-                key={button.label}
-                href={button.url}
-                className={`px-4 py-2 bg-[#eff1f3] font-[Arial] rounded font-normal text-sm inline-flex items-center text-[#2b323a] ${index === 0 ? '' : 'ml-5'}`}
-              >
-                <Img src={button.icon} className="inline max-h-5 px-1" />
-                {button.label}
-              </Link>
+              <Fragment key={button.label}>
+                {index !== 0 && <br hidden />}
+                <Link
+                  href={button.url}
+                  className={`px-4 py-2 bg-[#eff1f3] font-[Arial] rounded font-normal text-sm inline-flex items-center text-[#2b323a] whitespace-nowrap ${index === 0 ? '' : 'ml-5'}`}
+                >
+                  <Img src={button.icon} className="inline max-h-5 px-1" />
+                  {button.label}
+                </Link>
+              </Fragment>
             ))}
           </Column>
         </Row>
@@ -78,9 +93,13 @@ const DefaultFooter = () => {
           </Column>
           <Column>
             <Row align="right">
-              {FOOTER_SOCIAL_MEDIAS.map((socialMedia) => (
-                <Column key={socialMedia.label} className="inline-block">
-                  <Link href={socialMedia.url} className="px-2 inline-block">
+              {FOOTER_SOCIAL_MEDIAS.map((socialMedia, index) => (
+                <Column
+                  key={socialMedia.label}
+                  className="inline-flex shrink-0"
+                >
+                  {index !== 0 && <br hidden />}
+                  <Link href={socialMedia.url} className="px-2 inline-flex">
                     <Img
                       alt={socialMedia.label}
                       height="30"
@@ -100,34 +119,18 @@ const DefaultFooter = () => {
               Download Aplikasi bareksa
             </Text>
           </Column>
-          <Column>
-            <Row>
-              <Column>
-                <Link
-                  className="inline-block"
-                  href="https://bareksa.onelink.me/bLEI/bareksahomefooter?utm_source=bareksa-landing-page&amp;utm_medium=organic&amp;utm_campaign=&amp;utm_content=register-apps"
-                >
-                  <Img
-                    src="https://images.bareksa.com/bareksa/img/logo/badge_google-play.png"
-                    alt="Download Bareksa di Google Play"
-                    className="max-w-[135px]"
-                  />
-                </Link>
-              </Column>
-              <Column>
-                <Link
-                  className="inline-block"
-                  href="https://bareksa.onelink.me/bLEI/bareksahomefooter?utm_source=bareksa-landing-page&amp;utm_medium=organic&amp;utm_campaign=&amp;utm_content=register-apps"
-                >
-                  <Img
-                    src="https://images.bareksa.com/bareksa/img/logo/badge_app-store.png"
-                    alt="Download Bareksa di App Store"
-                    className="max-w-[135px]"
-                  />
-                </Link>
-              </Column>
-            </Row>
-          </Column>
+          {FOOTER_DOWNLOAD_APPS.map((downloadApp, index) => (
+            <Column key={downloadApp.label}>
+              <Link href={downloadApp.url} className="inline-flex">
+                <Img
+                  alt={'Download Bareksa di ' + downloadApp.label}
+                  className="max-w-[135px]"
+                  src={downloadApp.icon}
+                />
+              </Link>
+              {index === 0 && <br hidden />}
+            </Column>
+          ))}
         </Row>
 
         <Text className="font-[Arial] text-xs leading-5 tracking-[.25px] text-[#808f9f]">
