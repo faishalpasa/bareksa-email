@@ -24,7 +24,7 @@ const VerificationRDN = () => {
                 cellSpacing={0}
                 width={600}
               >
-                {/* Bareksa Logo */}
+                {/* Bareksa Logo  Here*/}
                 <tbody>
                   <tr>
                     <td>
