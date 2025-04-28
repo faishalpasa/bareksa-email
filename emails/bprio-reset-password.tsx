@@ -303,12 +303,12 @@ const VerificationRDN = () => {
                                   >
                                     Telp.{' '}
                                     <a
-                                      href="tel:021-5150132"
+                                      href="tel:021-80676767"
                                       style={{
                                         color: '#1E8FE1'
                                       }}
                                     >
-                                      021-5150132
+                                      021-80676767
                                     </a>
                                   </p>
                                   <p
