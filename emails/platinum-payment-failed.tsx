@@ -1,0 +1,249 @@
+import React from 'react';
+import {
+  Column,
+  Img,
+  Row,
+  Section,
+  Tailwind,
+  Text,
+  Hr
+} from '@react-email/components';
+import Layout from './static/components/Layout';
+import DefaultHeader from './static/components/Header/Default';
+import DefaultFooter from './static/components/Footer/Default';
+
+const TestingTemplate: React.FC = () => {
+  return (
+    <Layout>
+      <Tailwind>
+        <Section width={600} style={{ fontFamily: 'Arial' }}>
+          <DefaultHeader />
+
+          <Section className="px-6 bg-white">
+            <div className="bg-[#FFF3E0] rounded-md py-6 px-3 mb-6">
+              <p className="text-[#F57902] text-xl font-semibold leading-6 m-0">
+                Pembelian Gagal
+              </p>
+            </div>
+          </Section>
+
+          <Section className="px-6 bg-white">
+            <Text className="text-[#3D4751] text-base font-normal leading-6">
+              Halo <b>{'{{.name}}'}</b>,
+            </Text>
+            <Text className="text-[#3D4751] text-base font-normal leading-6">
+              Selamat! Pembelian reksadana dengan rincian di bawah ini sudah
+              berhasil diproses. Silakan cek portofolio kamu.
+            </Text>
+          </Section>
+
+          <Section className="px-6 bg-white">
+            <Section className="bg-[#F7F9FA]">
+              <Row className="p-3">
+                <Column className="w-10 pr-4">
+                  <Img
+                    src="https://placehold.co/400x400"
+                    className="size-10 rounded-full"
+                  />
+                </Column>
+                <Column>
+                  <Text className="text-[#00000099] text-xs font-normal leading-4 m-0 mb-1">
+                    Pendapatan Tetap
+                  </Text>
+                  <Text className="text-[#000000DE] text-base font-bold leading-6 m-0">
+                    Syailendra Fixed Income Fund Kapital
+                  </Text>
+                </Column>
+              </Row>
+
+              <Hr className="mx-3 w-auto" />
+
+              <Row className="px-3 pb-3 pt-3">
+                <Column className="bg-[#E1F5FE] py-1 px-2 rounded-l-md w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Order Dikelola RM
+                  </Text>
+                </Column>
+                <Column className="bg-[#E1F5FE] py-1 px-2 text-right rounded-r-md w-1/2">
+                  <div className="bg-[#00579A] rounded-md w-fit mr-0 ml-auto py-1 px-2">
+                    <Text className="text-white text-sm font-semibold leading-4 m-0">
+                      Bareksa Platinum
+                    </Text>
+                  </div>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Nomor Order
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.order_number}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Nomor Invoice
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.invoice_number}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Tanggal Order
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.order_date}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Nilai Pembelian
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.purchase_value}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Biaya Pembelian
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.purchase_fee}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Biaya Pembayaran
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.payment_fee}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-normal leading-6 m-0">
+                    Biaya Admin
+                  </Text>
+                  <Text className="text-[#697C8E] text-xs font-normal leading-4 m-0">
+                    *Untuk pembayaran bea meterai & peningkatan kualitas
+                    layanan.
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2  align-baseline">
+                  <Text className="text-[#2B323A] text-base font-normal leading-4 m-0">
+                    {'{{.purchase_value}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Hr className="mx-3 w-auto border-dashed" />
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-semibold leading-6 m-0">
+                    Total
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2  align-baseline">
+                  <Text className="text-[#2B323A] text-base font-semibold leading-4 m-0">
+                    {'{{.total_value}}'}
+                  </Text>
+                </Column>
+              </Row>
+
+              <Row className="px-3 pb-3">
+                <Column className="py-1 px-2 w-1/2">
+                  <Text className="text-[#697C8E] text-base font-semibold leading-6 m-0">
+                    Metode Pembayaran
+                  </Text>
+                </Column>
+                <Column className="py-1 px-2 w-1/2  align-baseline">
+                  <Text className="text-[#2B323A] text-base font-semibold leading-4 m-0">
+                    {'{{.payment_method}}'}
+                  </Text>
+                </Column>
+              </Row>
+            </Section>
+          </Section>
+
+          <Section className="px-6 bg-white pt-4">
+            <Section className="bg-[#FFF3E0] p-3">
+              <Row className="mb-2">
+                <Column className="size-5 pr-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    className="align-bottom"
+                  >
+                    <path
+                      d="M18.9166 13.5831L12.1666 1.91647C11.5 0.749806 9.91664 0.333139 8.74997 0.999806C8.3333 1.24981 7.99997 1.58314 7.8333 1.91647L1.0833 13.5831C0.416635 14.7498 0.833302 16.3331 1.99997 16.9998C2.41664 17.2498 2.8333 17.3331 3.24997 17.3331H16.6666C18.0833 17.3331 19.1666 16.1665 19.1666 14.8331C19.25 14.3331 19.0833 13.9165 18.9166 13.5831ZM9.99997 13.9998C9.49997 13.9998 9.16664 13.6665 9.16664 13.1665C9.16664 12.6665 9.49997 12.3331 9.99997 12.3331C10.5 12.3331 10.8333 12.6665 10.8333 13.1665C10.8333 13.6665 10.5 13.9998 9.99997 13.9998ZM10.8333 9.83314C10.8333 10.3331 10.5 10.6665 9.99997 10.6665C9.49997 10.6665 9.16664 10.3331 9.16664 9.83314V6.49981C9.16664 5.99981 9.49997 5.66647 9.99997 5.66647C10.5 5.66647 10.8333 5.99981 10.8333 6.49981V9.83314Z"
+                      fill="#F57902"
+                    />
+                  </svg>
+                </Column>
+                <Column>
+                  <Text className="text-[#3D4751] text-sm font-semibold leading-5 m-0">
+                    Alasan
+                  </Text>
+                </Column>
+              </Row>
+              <Row className="mb-0">
+                <Column className="size-5 pr-1 align-baseline">
+                  <Text className="text-[#5C6E7D] text-sm font-normal leading-5 m-0">
+                    {'{{.reason}}'}
+                  </Text>
+                </Column>
+              </Row>
+            </Section>
+          </Section>
+
+          <Section className="px-6 bg-white pt-4 pb-4">
+            <Text className="text-[#3D4751] text-base font-normal leading-6 m-0">
+              Bila membutuhkan bantuan lebih lanjut, silakan hubungi CS Bareksa
+              melalui Pusat Bantuan.
+            </Text>
+          </Section>
+
+          <DefaultFooter />
+        </Section>
+      </Tailwind>
+    </Layout>
+  );
+};
+
+export default TestingTemplate;

@@ -48,7 +48,7 @@ const Layout = ({ children }: LayoutProps) => {
     <Html>
       <Head>
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Email Template</title>
+        <title>Bareksa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
